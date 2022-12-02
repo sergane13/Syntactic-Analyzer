@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1669870888 source:d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\flux_date.cpp
+
+1670016278 source:d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\main.cpp
+	<iostream>
+	<fstream>
+	"flux_date.h"
+
+1669870888 d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\flux_date.cpp
+
+1669870935 d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\citire.h
+	<iostream>
+
+1670016149 d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\flux_date.h
+	<iostream>
+	<cstring>
+	<fstream>
+
