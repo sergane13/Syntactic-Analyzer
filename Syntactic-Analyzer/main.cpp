@@ -8,13 +8,14 @@ using namespace std;
 
 ifstream f("DATE.IN");
 
+
+
 int main()
 {
-    char s[100];
-    f.get(s, 100);
-    cout<<s;
- //   citire_lexic();
-//    citire_gram();
+    citire_lexic();
+    citire_gram();
+    afisare_gram();
+    afisare_lex();
 
     return 0;
 }
