@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <fstream>
+#include <unordered_map>
 
 using namespace std;
 
@@ -15,6 +16,9 @@ using namespace std;
 *pdv = 5 - a
 *pdv = 6 - c
 */
+
+unordered_map <string, string>  map_cuvinte;
+
 struct lexic{
     int contor =0;//numara cate cuvinte de acelasi tip sunt
     char parte_dv[100];
@@ -44,6 +48,14 @@ void init_lex_pdv(){
     strcpy(pdv[6].parte_dv, "C");
 }
 
+void adauga_in_map(){
+    for(int i=1; i<=6; ++i){
+        for(int j=0; j<pdv[i].contor; ++j){
+            map_cuvinte[pdv[i].cuv[j]] = pdv[i].parte_dv;
+        }
+    }
+}
+
 void citire_lexic(){
     FILE *ptr;//deschid fisierul
     ptr = fopen("LEX.TXT", "r");
@@ -68,6 +80,8 @@ void citire_lexic(){
         }
         strcpy(cpy_c, c);
     }
+
+    adauga_in_map();
 
     fclose(ptr);
 }
@@ -95,10 +109,6 @@ int verifica_pp(char p[]){ ///
     return 0;
 }
 
-int verifica_si_adauga(char p[]){
-    return 0;
-}
-
 void adauga_in_gram(char s[]){
     init_rez();
     int nr_rez;
@@ -118,7 +128,6 @@ void adauga_in_gram(char s[]){
 }
 
 void citire_gram(){
-
     char s[100];
     ifstream f("GRAM.TXT");
     while(f.getline(s, 100, '\n')){
@@ -136,6 +145,7 @@ void afisare_gram(){
         cout<<'\n';
     }
 }
+
 
 void afisare_lex(){
     for(int i=1; i<=6; ++i){
