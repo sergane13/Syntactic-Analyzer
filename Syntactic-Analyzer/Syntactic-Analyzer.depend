@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1670442563 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
+	<iostream>
+	<graphics.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+
