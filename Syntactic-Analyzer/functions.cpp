@@ -13,7 +13,7 @@
 // automatic resize in progress
 void drawInputField(int windowLenght, char fullSentence[300], int sentanceLenght)
 {
-    outtextxy(windowLenght/2 - 350 + 2, 20, "Add your text here: ");
+    outtextxy(windowLenght/2 - 350 + 2, 20, "Add your text here. Press ENTER when ready. ");
 
     int necesaryRows = sentanceLenght / 100 + 1;
     int heightSize = 50 + necesaryRows * 20;
@@ -85,6 +85,8 @@ void readingInputText(
 
         auxCharacter = (char)getch( );
     }
+
+
 }
 
 
@@ -133,6 +135,10 @@ void drawWholeTableField(
             );
         }
     }
+
+    // show text that user need to press ENTER to run the program again
+    int textPositionY = centerPoint.y + (numberOfWords * 0.5) * FIELD_HEIGHT;
+    outtextxy(startPoint.x, textPositionY, "Press ENTER again to run the program.");
 }
 
 

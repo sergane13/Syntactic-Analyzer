@@ -36,7 +36,6 @@ int main()
     centerPoint.y = VIEWPORT_HEIGHT / 2;
 
     initwindow(VIEWPORT_LENGHT, VIEWPORT_HEIGHT);
-
     drawInputField(VIEWPORT_LENGHT, fullSentence);
 
     // code goes here

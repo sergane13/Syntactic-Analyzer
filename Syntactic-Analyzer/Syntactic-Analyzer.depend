@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1670500998 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
+1670501180 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
 	<iostream>
 	<graphics.h>
 	<stdlib.h>
@@ -9,7 +9,7 @@
 	"functions.h"
 	"Button.h"
 
-1670500850 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\functions.cpp
+1670502093 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\functions.cpp
 	<iostream>
 	<graphics.h>
 	<stdlib.h>
