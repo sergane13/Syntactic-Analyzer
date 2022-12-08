@@ -1,8 +1,33 @@
 # depslib dependency file v1.0
-1670442563 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
+1670500998 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
 	<iostream>
 	<graphics.h>
 	<stdlib.h>
 	<stdio.h>
 	<conio.h>
+	<math.h>
+	"functions.h"
+	"Button.h"
+
+1670500850 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\functions.cpp
+	<iostream>
+	<graphics.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	"functions.h"
+
+1670500575 c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\functions.h
+
+1670500573 c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\button.h
+
+1670500475 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\button.cpp
+	<iostream>
+	<graphics.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	"Button.h"
 
