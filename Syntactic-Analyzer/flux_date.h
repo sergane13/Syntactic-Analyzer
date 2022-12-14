@@ -2,6 +2,9 @@
 #include <cstring>
 #include <fstream>
 #include <unordered_map>
+#include <vector>
+#include <map>
+#include <list>
 
 using namespace std;
 
@@ -19,23 +22,15 @@ using namespace std;
 
 unordered_map <string, string>  map_cuvinte;
 
+map<pair<string, string>, string> map_pdv;
+
+list<string> matrice[100][100];
+
 struct lexic{
     int contor =0;//numara cate cuvinte de acelasi tip sunt
     char parte_dv[100];
     char cuv[1000][100];//retine cuvintele respective unei anumite parti de vorbire
 } pdv[1000];
-
-struct gram {
-    char rezultat[100]; // partea de propozitie care rezulta din posib[].p1 si posib[].p2
-
-    int cont = 0;
-    struct combinatii{
-        char p1[100];
-        char p2[100];
-    }posib[100];
-
-} rez[100];
-
 
 
 void init_lex_pdv(){
@@ -86,66 +81,35 @@ void citire_lexic(){
     fclose(ptr);
 }
 
-void init_rez(){
-    strcpy(rez[1].rezultat, "S");
-    strcpy(rez[2].rezultat, "NP");
-    strcpy(rez[3].rezultat, "AP");
-    strcpy(rez[4].rezultat, "CP");
-    strcpy(rez[5].rezultat, "VP");
-}
-
-int verifica_pp(char p[]){ ///
-    if(strcmp(p, "S") == 0)
-        return 1;
-    else if(strcmp(p, "NP") == 0)
-        return 2;
-    else if(strcmp(p, "AP") == 0)
-        return 3;
-    else if(strcmp(p, "CP") == 0)
-        return 4;
-    else if(strcmp(p, "VP") == 0)
-        return 5;
-
-    return 0;
-}
-
-void adauga_in_gram(char s[]){
-    init_rez();
+void adauga_in_map_pdv(char s[]){
     int nr_rez;
+    string r, p1, p2;//rezultat, parte de vb1, parte de vb2
+
     char *p;
 
     p = strtok(s, " ");
-    nr_rez = verifica_pp(p);
+    r = p;
 
     p = strtok(NULL, " ");
-    strcpy(rez[nr_rez].posib[rez[nr_rez].cont].p1, p);
+    p1 = p;
 
     if(p = strtok(NULL, " ")){
-        strcpy(rez[nr_rez].posib[rez[nr_rez].cont].p2, p);
+        p2 = p;
+    } else {
+        p2 = "";
     }
 
-    rez[nr_rez].cont++;
+    map_pdv[{p1, p2}] = r;
+
 }
 
 void citire_gram(){
     char s[100];
     ifstream f("GRAM.TXT");
     while(f.getline(s, 100, '\n')){
-        adauga_in_gram(s);
+        adauga_in_map_pdv(s);
     }
 }
-
-
-void afisare_gram(){
-    for(int i=1; i<5; ++i){
-        cout<<rez[i].rezultat<<'\n';
-        for(int j=0; j<rez[i].cont; ++j){
-            cout<<"  "<<rez[i].posib[j].p1<<' '<<rez[i].posib[j].p2<<'\n';
-        }
-        cout<<'\n';
-    }
-}
-
 
 void afisare_lex(){
     for(int i=1; i<=6; ++i){

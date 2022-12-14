@@ -12,4 +12,6 @@ NP NP NP
 VP VP VP
 S S S
 S S NP
-S S VP
+S S AP
+S S CP
+S Det S

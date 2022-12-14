@@ -1,28 +1,35 @@
 # depslib dependency file v1.0
 1669870888 source:d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\flux_date.cpp
 
-1670276713 source:d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\main.cpp
+1670971545 source:d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\main.cpp
 	<iostream>
 	<cstring>
 	<fstream>
 	"flux_date.h"
 	"opereaza_fraza.h"
 	<unordered_map>
+	<vector>
 
 1669870888 d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\flux_date.cpp
 
 1669870935 d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\citire.h
 	<iostream>
 
-1670275126 d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\flux_date.h
+1670970046 d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\flux_date.h
 	<iostream>
 	<cstring>
 	<fstream>
 	<unordered_map>
+	<vector>
+	<map>
+	<list>
 
-1670276649 d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\opereaza_fraza.h
+1670971780 d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\opereaza_fraza.h
 	<iostream>
 	<fstream>
 	<cstring>
 	<unordered_map>
+	<vector>
+	<map>
+	<vector>
 
