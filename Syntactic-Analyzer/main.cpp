@@ -4,7 +4,6 @@
 #include "flux_date.h"
 #include "opereaza_fraza.h"
 #include <unordered_map>
-//#include <list>
 #include <vector>
 
 using namespace std;
@@ -14,28 +13,13 @@ ifstream f("DATE.IN");
 
 int main()
 {
-
-    citire_lexic();
-    citire_gram();
-   // afisare_gram();
-    //afisare_lex();
+    citire();
 
     char s[100];
     strcpy(s, citeste_fraza());//copiem fraza in s
 
+    int l_matrice = creaza_matricea(s, matr.m, map_cuvinte, map_pdv);
 
-    //TODO: de facut matricea???
-    char matrice[][][];
-    int l_matrice = citeste_matricea(s, matrice, map_cuvinte);
-
-    cout<<matrice[0][0];
-
-    //matrice[0][0];
-    //afiseaza_matricea(s, matrice, l_matrice);
-    //cout<<"Hello world!";
-    //cout<<map_pdv[{"C","A"}];
-
-
-
+    afiseaza_matricea(l_matrice);
     return 0;
 }

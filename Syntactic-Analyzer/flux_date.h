@@ -24,13 +24,13 @@ unordered_map <string, string>  map_cuvinte;
 
 map<pair<string, string>, string> map_pdv;
 
-list<string> matrice[100][100];
-
 struct lexic{
     int contor =0;//numara cate cuvinte de acelasi tip sunt
     char parte_dv[100];
     char cuv[1000][100];//retine cuvintele respective unei anumite parti de vorbire
 } pdv[1000];
+
+void adauga_in_map_pdv(char s[]);
 
 
 void init_lex_pdv(){
@@ -81,6 +81,19 @@ void citire_lexic(){
     fclose(ptr);
 }
 
+void citire_gram(){
+    char s[100];
+    ifstream f("GRAM.TXT");
+    while(f.getline(s, 100, '\n')){
+        adauga_in_map_pdv(s);
+    }
+}
+
+void citire(){
+    citire_lexic();
+    citire_gram();
+}
+
 void adauga_in_map_pdv(char s[]){
     int nr_rez;
     string r, p1, p2;//rezultat, parte de vb1, parte de vb2
@@ -103,13 +116,7 @@ void adauga_in_map_pdv(char s[]){
 
 }
 
-void citire_gram(){
-    char s[100];
-    ifstream f("GRAM.TXT");
-    while(f.getline(s, 100, '\n')){
-        adauga_in_map_pdv(s);
-    }
-}
+
 
 void afisare_lex(){
     for(int i=1; i<=6; ++i){
