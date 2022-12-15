@@ -20,6 +20,7 @@ int main()
 
     int l_matrice = creaza_matricea(s, matr.m, map_cuvinte, map_pdv);
 
+    cout<<matr.m[0][0][0];
     afiseaza_matricea(l_matrice);
     return 0;
 }
