@@ -5,11 +5,20 @@
 #include <conio.h>
 #include <math.h>
 
+#include <cstring>
+#include<fstream>
+#include "flux_date.h"
+#include "opereaza_fraza.h"
+#include <unordered_map>
+#include <vector>
+
 #include "functions.h"
 #include "Button.h"
 
 #define VIEWPORT_HEIGHT 600
 #define VIEWPORT_LENGHT 1200
+
+ifstream f("DATE.IN");
 
 using namespace std;
 
@@ -21,7 +30,10 @@ int main()
     char fullSentence[300];
     resetSentence(fullSentence);
 
+    // int l_matrice;
+
     // alocate memory for 2-dimensional array
+
     char** eachWord;
     int numberOfWords;
 
@@ -38,25 +50,50 @@ int main()
     initwindow(VIEWPORT_LENGHT, VIEWPORT_HEIGHT);
     drawInputField(VIEWPORT_LENGHT, fullSentence);
 
-    // code goes here
-    //      ||
-    //      ||
-    //      \/
+//     code goes here
+//          ||
+//          ||
+//          \/
 
     inputCharacter = (char)getch();
+
+    // se citeste din fisiere
+    citire();
 
     while(true)
     {
         readingInputText(VIEWPORT_LENGHT, fullSentence, inputCharacter);
+
+
+        // se face o copie la stringul original
+        char temp[300];
+        strcpy(temp, fullSentence);
+
+
+        // se creaza matricea 3-dimensionala
+        // matr.m, i,j --> dimensiunea in 2d
+        //           k --> numarul de elemente din casuta
+        int tempValue = creaza_matricea(temp, matr.m, map_cuvinte, map_pdv);
+        // afiseaza_matricea(tempValue);
+
+
+        // se extrage numarul de cuvinte din propozitie
         numberOfWords = getEachWordFromText(fullSentence, eachWord);
 
+
         drawInputField(VIEWPORT_LENGHT, fullSentence);
-        drawWholeTableField(
+
+
+        if(numberOfWords > 0)
+        {
+             drawWholeTableField(
                         eachWord,
                         numberOfWords,
+                        matr.m,
                         centerPoint,
                         FIELD_HEIGHT,
                         FIELD_LENGHT);
+        }
 
         inputCharacter = (char)getch();
 
@@ -72,13 +109,11 @@ int main()
         }
     }
 
-    //      /\
-    //      ||
-    //      ||
-    // code goes here
+//          /\
+//          ||
+//          ||
+//     code goes here
 
     getch();
     closegraph();
-
-    return 0;
 }

@@ -26,11 +26,8 @@ void drawButton(int xPosition, int yPosition )
 
 /// -- In progress --
 // check if button is clicked
-bool buttonClicked(int xPosition, int yPosition)
+bool buttonClicked(int xPosition, int yPosition, bool mouseClicked)
 {
-    // detect when the left mouse button is clicked down
-    bool mouseClicked = ismouseclick(2);
-
     int xPos = mousex();
     int yPos = mousey();
 

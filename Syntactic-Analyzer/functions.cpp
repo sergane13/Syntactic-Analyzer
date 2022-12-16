@@ -4,12 +4,34 @@
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
+#include <string>
+#include <cstring>
 
 #include "functions.h"
+#include "Button.h"
+
+using namespace std;
+
+
+/// -- READY --
+// draw the conclusion of analysis
+void drawConclusion(int windowLenght, bool conclusion)
+{
+    if(conclusion)
+    {
+        setcolor(GREEN);
+        outtextxy(windowLenght/2 + 350 - 170, 20, "The sentence is CORRECT");
+    }
+    else
+    {
+        setcolor(RED);
+        outtextxy(windowLenght/2 + 350 - 160, 20, "The sentence is WRONG");
+    }
+}
 
 
 /// -- In progress --
-// draws the input field where user add his sentance
+// draws the input field where user add his sentence
 // automatic resize in progress
 void drawInputField(int windowLenght, char fullSentence[300], int sentanceLenght)
 {
@@ -77,16 +99,14 @@ void readingInputText(
         }
 
         clearviewport();
-
         drawInputField(windowLenght, fullSentence, counterFullSentence);
 
         //drawButton(120, 60);
-        //buttonClicked(120, 60);
+        //buttonClicked(120, 60, mouseClicked);
 
-        auxCharacter = (char)getch( );
+        auxCharacter = (char)getch();
+
     }
-
-
 }
 
 
@@ -95,11 +115,13 @@ void readingInputText(
 void drawWholeTableField(
        char** eachWord,
        int numberOfWords,
+       string matrice[30][30][30],
        viewportPoint centerPoint,
        int fieldHeight,
        int fieldLenght)
 {
     char temp[50];
+    //string temp;
 
     viewportPoint startPoint;
     startPoint.x = centerPoint.x - ((numberOfWords + 1) * (FIELD_LENGHT * 0.5));
@@ -123,7 +145,7 @@ void drawWholeTableField(
             }
             else
             {
-                strcpy(temp, "..."); // the word analyzed
+                strcpy(temp, matrice[j - 1][i - 1][0].c_str()); // the word analyzed
             }
 
             drawTableField(
@@ -135,6 +157,20 @@ void drawWholeTableField(
             );
         }
     }
+
+    // cout << matrice[0][numberOfWords - 1][0] << endl;
+
+    // show the result
+    if(matrice[0][numberOfWords - 1][0] == "S")
+    {
+        drawConclusion(1200, TRUE);
+    }
+    else
+    {
+        drawConclusion(1200, FALSE);
+    }
+
+    setcolor(WHITE);
 
     // show text that user need to press ENTER to run the program again
     int textPositionY = centerPoint.y + (numberOfWords * 0.5) * FIELD_HEIGHT;

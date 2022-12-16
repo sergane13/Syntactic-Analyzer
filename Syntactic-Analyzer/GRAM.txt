@@ -1,0 +1,10 @@
+S NP VP
+NP Pron
+NP N
+NP Det N
+NP NP AP
+AP A
+AP AP CP
+CP C A
+VP V VP
+VP V NP
