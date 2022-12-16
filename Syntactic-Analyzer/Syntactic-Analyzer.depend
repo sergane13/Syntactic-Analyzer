@@ -1,4 +1,6 @@
 # depslib dependency file v1.0
+69 <<<<<<< HEAD
+
 1669870888 source:d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\flux_date.cpp
 
 1671109437 source:d:\facultate\ip\analiaztor sintactic\syntactic-analyzer\syntactic-analyzer\main.cpp
@@ -33,7 +35,7 @@
 	<map>
 	<vector>
 
-1671194271 source:c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\button.cpp
+1671207217 source:c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\button.cpp
 	<iostream>
 	<graphics.h>
 	<stdlib.h>
@@ -42,9 +44,60 @@
 	<math.h>
 	"Button.h"
 
-1671194271 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\button.h
+1671109628 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
 
-1671194271 source:c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\functions.cpp
+1671107816 ntend
+	<iostream>
+	<graphics.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	<iostream>
+	<graphics.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	<string>
+	<cstring>
+	"functions.h"
+	"Button.h"
+	<iostream>
+	<graphics.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	<iostream>
+	<cstring>
+	<fstream>
+	<unordered_map>
+	<vector>
+	<map>
+	<list>
+	<iostream>
+	<fstream>
+	<cstring>
+	<unordered_map>
+	<vector>
+	<map>
+	<vector>
+
+1671106629 D
+	"Button.h"
+	<cstring>
+	<fstream>
+	"flux_date.h"
+	"opereaza_fraza.h"
+	<unordered_map>
+	<vector>
+	"functions.h"
+	"Button.h"
+
+1671207219 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\button.h
+
+1671207217 source:c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\functions.cpp
 	<iostream>
 	<graphics.h>
 	<stdlib.h>
@@ -56,10 +109,12 @@
 	"functions.h"
 	"Button.h"
 
-1671194271 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\functions.h
+1671109399 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\functions.cpp
+
+1671207216 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\functions.h
 	<cstring>
 
-1671194271 source:c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
+1671214451 source:c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
 	<iostream>
 	<graphics.h>
 	<stdlib.h>
@@ -75,21 +130,19 @@
 	"functions.h"
 	"Button.h"
 
-1671137001 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\flux_date.h
-	<iostream>
+1671108538 c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\functions.h
 	<cstring>
-	<fstream>
-	<unordered_map>
-	<vector>
-	<map>
-	<list>
+
+1671104767 c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\button.h
+
+1671104811 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\button.cpp
+
+1671137001 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\flux_date.h
+	"Button.h"
+
+1671106629 c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\flux_date.h
 
 1671137001 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\opereaza_fraza.h
-	<iostream>
-	<fstream>
-	<cstring>
-	<unordered_map>
-	<vector>
-	<map>
-	<vector>
+
+1671107816 c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\opereaza_fraza.h
 
