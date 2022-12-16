@@ -33,3 +33,63 @@
 	<map>
 	<vector>
 
+1671194271 source:c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\button.cpp
+	<iostream>
+	<graphics.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	"Button.h"
+
+1671194271 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\button.h
+
+1671194271 source:c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\functions.cpp
+	<iostream>
+	<graphics.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	<string>
+	<cstring>
+	"functions.h"
+	"Button.h"
+
+1671194271 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\functions.h
+	<cstring>
+
+1671194271 source:c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
+	<iostream>
+	<graphics.h>
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	<cstring>
+	<fstream>
+	"flux_date.h"
+	"opereaza_fraza.h"
+	<unordered_map>
+	<vector>
+	"functions.h"
+	"Button.h"
+
+1671137001 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\flux_date.h
+	<iostream>
+	<cstring>
+	<fstream>
+	<unordered_map>
+	<vector>
+	<map>
+	<list>
+
+1671137001 c:\users\andrei\documents\github\syntactic-analyzer\syntactic-analyzer\opereaza_fraza.h
+	<iostream>
+	<fstream>
+	<cstring>
+	<unordered_map>
+	<vector>
+	<map>
+	<vector>
+
