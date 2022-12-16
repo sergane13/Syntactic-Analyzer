@@ -4,14 +4,12 @@ Det o
 Det un
 Det cu
 Det de
-
 Det Orice
 Det Fiecare
 Det O
 Det Un
 Det Cu
 Det De
-
 Pron eu
 Pron tu
 Pron el
@@ -20,7 +18,6 @@ Pron noi
 Pron voi
 Pron ei
 Pron ele
-
 Pron Eu
 Pron Tu
 Pron El
@@ -29,8 +26,6 @@ Pron Noi
 Pron Voi
 Pron Ei
 Pron Ele
-
-
 N barbat
 N femeie
 N cal
@@ -41,30 +36,20 @@ N bicicleta
 N caruta
 N roti
 N fier
-
-
-
 V iubesc
 V iubesti
 V iubeste
 V iubim
 V iubiti
 V iubesc
-
 V merg
 V mergi
 V merge
 V mergem
 V mergeti
 V merg
-
 V uraste
-
-
 A frumoasa
 A desteapta
 C si
 C sau
-
-
-
