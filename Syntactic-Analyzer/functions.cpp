@@ -10,6 +10,8 @@
 #include "functions.h"
 #include "Button.h"
 
+#define chenarImg "chenarSimplu.jpg" // chenar pentru un field din tabel
+
 using namespace std;
 
 
@@ -20,11 +22,15 @@ void drawConclusion(int windowLenght, bool conclusion)
     if(conclusion)
     {
         setcolor(GREEN);
+        setbkcolor(BLACK);
+
         outtextxy(windowLenght/2 + 350 - 170, 20, "The sentence is CORRECT");
     }
     else
     {
         setcolor(RED);
+        setbkcolor(BLACK);
+
         outtextxy(windowLenght/2 + 350 - 160, 20, "The sentence is WRONG");
     }
 }
@@ -69,7 +75,12 @@ void drawTableField(
         endY
     );
 
-    outtextxy(startX + 3, startY + 3, word);
+    // the image for a table field
+    readimagefile(chenarImg, startX, startY, endX, endY);
+
+    setbkcolor(COLOR(242, 242, 242));
+    setcolor(BLACK);
+    outtextxy(startX + 5, startY + 5, word);
 }
 
 
@@ -157,8 +168,6 @@ void drawWholeTableField(
             );
         }
     }
-
-    // cout << matrice[0][numberOfWords - 1][0] << endl;
 
     // show the result
     if(matrice[0][numberOfWords - 1][0] == "S")

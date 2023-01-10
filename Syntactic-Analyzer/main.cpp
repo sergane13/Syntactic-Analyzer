@@ -22,7 +22,6 @@ ifstream f("DATE.IN");
 
 using namespace std;
 
-
 int main()
 {
     char inputCharacter;
@@ -31,7 +30,6 @@ int main()
     resetSentence(fullSentence);
 
     // int l_matrice;
-
     // alocate memory for 2-dimensional array
 
     char** eachWord;
@@ -48,12 +46,8 @@ int main()
     centerPoint.y = VIEWPORT_HEIGHT / 2;
 
     initwindow(VIEWPORT_LENGHT, VIEWPORT_HEIGHT);
-    drawInputField(VIEWPORT_LENGHT, fullSentence);
 
-//     code goes here
-//          ||
-//          ||
-//          \/
+    drawInputField(VIEWPORT_LENGHT, fullSentence);
 
     inputCharacter = (char)getch();
 
@@ -109,11 +103,8 @@ int main()
         }
     }
 
-//          /\
-//          ||
-//          ||
-//     code goes here
-
     getch();
     closegraph();
+
+    return 0;
 }

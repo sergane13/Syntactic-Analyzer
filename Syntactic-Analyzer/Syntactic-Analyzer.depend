@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1671109628 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
+1673336336 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\main.cpp
 	<iostream>
 	<graphics.h>
 	<stdlib.h>
@@ -15,7 +15,7 @@
 	"functions.h"
 	"Button.h"
 
-1671109399 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\functions.cpp
+1673337234 source:c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\functions.cpp
 	<iostream>
 	<graphics.h>
 	<stdlib.h>
@@ -41,7 +41,7 @@
 	<math.h>
 	"Button.h"
 
-1671106629 c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\flux_date.h
+1673289640 c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\flux_date.h
 	<iostream>
 	<cstring>
 	<fstream>
@@ -50,7 +50,7 @@
 	<map>
 	<list>
 
-1671107816 c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\opereaza_fraza.h
+1673289697 c:\users\serba\documents\github\syntactic-analyzer\syntactic-analyzer\opereaza_fraza.h
 	<iostream>
 	<fstream>
 	<cstring>

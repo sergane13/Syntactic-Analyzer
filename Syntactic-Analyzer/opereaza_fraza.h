@@ -4,7 +4,6 @@
 #include <unordered_map>
 #include <vector>
 #include <map>
-//#include <list>
 #include <vector>
 
 
@@ -13,7 +12,8 @@ using namespace std;
 
 struct Matrice{
     string m[30][30][30];//se va salva matricea
-    int c[30][30];//in acest tablou se vor salva contorii                        //acea casuta
+    int c[30][30];//in acest tablou se vor salva contorii
+                         //acea casuta
 }matr;
 
 
@@ -58,7 +58,6 @@ void parcurgere_matrice(int n, map<pair<string, string>, string> map_pdv){
     }
 }
 
-
 int creaza_matricea(char s[], string matrice[30][30][30]
                      , unordered_map<string, string> map_list
                      , map<pair<string, string>, string> map_pdv){
@@ -79,16 +78,3 @@ int creaza_matricea(char s[], string matrice[30][30][30]
 /**
     *n = nr de elem de pe o linie
 */
-
-
-void afiseaza_matricea(int n ){
-    for(int i=0; i<=n; ++i){
-        for(int j=0; j<n; ++j){
-            for(int k=0; k<matr.c[i][j]; k++){
-                cout<<matr.m[i][j][0]<<' ';
-            }
-            cout<<' ';
-        }
-        cout<<'\n';
-    }
-}
