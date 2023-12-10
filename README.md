@@ -34,7 +34,7 @@ Pentru a utiliza acest analizator sintactic, urmați pașii de mai jos:
     - Rulează executabilul generat folosind comanda ./program în terminal.    
 
 
-## Autor
+## Autori
 
 Ochian Andrei-Iulian
 ochian_a@yahoo.ro
